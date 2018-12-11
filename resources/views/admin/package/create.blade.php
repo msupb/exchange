@@ -36,6 +36,7 @@
             </div>
         </div>
         <input type="button" id="add-pu-course" class="btn btn-success" value="Add">
+        <input type="button" id="remove-pu-course" class="btn btn-danger" value="Remove">
         <div class="form-group">
             {{Form::label('match', 'Match')}}
             <input type="range" min="0" max="10" step="1" name="match_value" onchange="change(this.value)">
@@ -102,14 +103,22 @@
     });
 
     $('#add-pu-course').click(function() {
-            let course = $('{{Form::label("course", "Course")}}\
+        let course = $('<div class="test">{{Form::label("course", "Course")}}\
         <select selected="" class="form-control pu_course" id="pu_course" name="course[]">\
             <option disabled selected value> -- select an option -- </option>\
             @foreach($course as $key)\
                 <option value="{{$key->Id}}">{{$key->name}}</option>\
             @endforeach\
-        </select>');
+        </select>\
+        </div>');
         $('#pu-course').append(course);
+    });
+
+    $('#remove-pu-course').click(function() {
+        $('.test:last').remove();
     });
 </script>
 @endsection
+
+
+
