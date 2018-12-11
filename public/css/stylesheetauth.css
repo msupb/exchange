@@ -1,0 +1,128 @@
+/**
+Master characteristics
+**/
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: grey;
+  font-size: 20px;
+  /*background-image: url(goExchange.png);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+/**
+Authentication shizzle
+**/
+
+.login-area{
+  position: relative;
+  top: 25%;
+  left: 1%;
+  width: 50%;
+  padding: 5px;
+}
+
+.login-area-field{
+   width: 100%
+}
+
+.row-display{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: relative;
+}
+
+.login-area .row{
+  flex-direction: column;
+}
+
+.login-area input{
+  border: 1px solid #979797;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  margin: 5px 0 20px 0 ;
+}
+
+.login-area label{
+  padding: 0 !important;
+}
+.login-area .login-area-field .checkbox{
+  width: 1vw;
+  height: 1vw;
+  box-sizing: unset;
+  margin: 5px 0;
+}
+
+input, select {
+   color: purple;
+   font-weight: lighter;
+ }
+
+ .login-button{
+   position: absolute;
+   right: 0;
+   border: none;
+   font-size: 1vw;
+   padding: 5px 10px;
+   color: #fff;
+   background-color: purple;
+   border-radius: 5px;
+   -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75); 
+ }
+
+
+label{
+  font-weight: lighter;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+}
+
+.card {
+  margin-top: 50%;
+}
+
+@media (min-width: 768px){
+.login-area .text-md-right {
+    text-align: left!important;
+}
+  
+
+
+.card-body{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100vh;
+  height: 60vh;
+  border-radius: 5px;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+
+}
+
+.btn.btn-primary{
+  border: 1px solid #979797;
+  border-radius: 8px;
+  font-size: 13;
+    height: 35px;
+}
+
+.btn.btn-link::before {
+  content: "\A";
+  white-space: pre;
+}
+.btn.btn-link{
+  font-size: 13;
+}

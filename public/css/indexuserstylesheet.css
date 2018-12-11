@@ -1,0 +1,39 @@
+table {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+table thead {
+  font-weight: bold;
+  color: white;
+
+}
+
+table td{
+  padding: 5px 10px;
+  border: 1px solid purple;
+  background-color: purple;
+
+}
+table tbody td {
+  font-size: 13px;
+  font-weight: lighter;
+ border-color: white;
+  background-color: white;
+}
+
+
+
+
+table thead tr:first-child td:first-child { border-top-left-radius: 10px; }
+table thead tr:first-child td:last-child { border-top-right-radius: 10px; }
+table tbody tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+table tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+/*
+tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+*/
